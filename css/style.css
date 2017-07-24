@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500,700');
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url(../img/main-bg.jpeg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.main_header {
+  height: 100px;
+  width: 100%;
+}
+
+.main_header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main_header ul li {
+  font-size: 2em;
+  position: relative;
+  top: 37px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+/*.main_header ul li::before {
+  content: "\00BB";
+  font-size: 30px;
+}
+
+.main_header ul li::after {
+  content: " \00ab";
+  font-size: 30px;
+}*/
+
+.main_header svg {
+  position: relative;
+  top: 28px;
+  left: 60px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.twitter_logo {
+  height: 30px;
+  width: 30px;
+  float: right;
+  position: relative;
+  right: 160px;
+  top: -8px;
+}
+
+.facebook_logo {
+  height: 70px;
+  width: 70px;
+  float: right;
+  position: fixed;
+  right: 53px;
+  top: 23px;
+}
+
+
+.main_body h1 {
+  font-size: 120px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 240px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+.main_body h2 {
+  font-size: 35px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 250px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.down_arrow {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 460px;
+  margin: 0 auto;
+}
+
+@media(max-width:800px) {
+    .main_header ul li {
+        display: none;
+    }
+  }
+@media(min-width:800px) {
+
+    .main_header svg {
+        display: none;
+    }
+  }
+@media(min-width:800px) {
+    .twitter_logo {
+        display: none;
+    }
+}
+@media(min-width:800px) {
+    .facebook_logo {
+        display: none;
+    }
+}
